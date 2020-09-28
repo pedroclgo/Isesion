@@ -1,0 +1,171 @@
+body {
+    margin: 0px;
+    font-family: sans-serif;
+    /*background-color: rgb(49, 150, 116);*/
+  }
+  header {
+    align-items: center;
+    background-color: #21C08B;
+    color: black;
+    display: flex;
+    width: 100%;
+    height: 80px;
+    justify-content: space-between;
+    top: 0px;
+    width: 100%;
+  }
+  .header_img {
+    width: 200px;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+  .login {
+    background: linear-gradient(#21C08B, #AB88FF );
+    display: flex; /*ubicación de nuestros elementos*/
+    align-items: center; /* de forma vertical*/
+    justify-content: center; /*Para alinear de forma horizontal*/
+    flex-direction: column; /*Poner los elementos de arriba a bajo*/
+    padding: 0px 30px; /*Para que no quede pegado en la parte del top ni en el button*/
+    min-height: calc(100vh - 200px); /*Lo que significa por más grande que sea nuestro alto en la pantalla siempre tiene ese valor */
+  }
+  .login__container {
+    background-color: rgba(255, 255, 255, 0.1); /*el última cifra es para ponerle una parte traslucida*/
+    border: 2px solid white;
+    border-radius: 40px;
+    color: white;
+    padding: 60px 68px 40px;
+    min-height: 700px;
+    width: 300px;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-around;
+  }
+  .login__container--form {
+    display: flex;
+    flex-direction: column;/*para que los elementos vayan de arriba hacia abajo*/
+  }
+  
+  .login__container--form label{
+    font-size: 14px;
+  }
+
+  .login_container--remember-me {
+    color: white;
+    display: flex;
+    justify-content: space-between; /*space-between*/
+    margin-top: 10px;
+  }
+  
+  .login_container--remember-me a {
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+  }
+ /*Para que nos haga hover en la sección de a*/
+
+ 
+ .login_container--remember-me a:hover {
+  text-decoration: underline;
+  }
+  
+  .login__container--social-media > div {  /* se le asigna el div para q las modificaciones se puntualicen*/
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+  
+  .login__container--social-media > div > img {
+    width: 10px;
+    margin-right: 10px;
+  }
+  
+  .login_conteiner--register {
+    font-size: 14px;
+  }
+  
+  .login_conteiner--register a {
+    font-size: 16px;
+    font-weight: bold; /*para ponerle negrita*/
+    color: white;
+    text-decoration: none;
+  }
+  
+  .login_conteiner--register a:hover {
+    text-decoration: underline;
+  }
+  
+  .input {
+    background-color: transparent;
+    border-left: 0px;
+    border-top: 0px;
+    border-right: 0px;
+    border-radius: 2px solid white;
+    font-family: sans-serif;
+    font-size: 16px;
+    margin-bottom: 20px; /*para separar uno del otro */
+    padding: 0px 20px;
+    outline: none; /*Para quitarle el borde al boton*/
+    height: 50px;
+  }
+  
+  ::placeholder { /*para decorar al texto interno de un elemento */
+    color: white;
+  }
+  
+  .button {
+    background-color: rgba( 255, 255, 255, 0.1);
+    border: none;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: sans-serif;
+    height: 50px; /*para ambliar el espacio interno del botón*/
+    letter-spacing: 1px; /*para q las letras no se apreten entre si */
+    margin: 10px 0px;
+  }
+  
+  .footer {
+    background: #AB88FF;
+    display: flex;
+    align-items: center; /*alineado de nuestros elementos*/
+    height: 100px;
+    width: 100%;
+  }
+  
+  .footer a {
+      color: white;
+      cursor: pointer;
+      font-size: 14px;
+      padding-left: 30px ;
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+  
+  .login a:hover {
+      text-decoration: underline;
+    }
+    
+    @media only screen and (max-width: 600px) {
+      .login__container {
+          background-color: transparent;
+          border: none;
+          padding: 0px;
+          width: 100%;
+      }
+
+      @media only screen and (max-width: 600px) {
+        .login__container {
+            background-color: transparent;
+            border: none;
+            padding: 0px;
+            width: 100%;  
+    }
+    .footer {
+      align-items: flex-start;
+      flex-direction: column;} 
